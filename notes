@@ -1,0 +1,14 @@
+hapus network setelah docker compose
+  - docker network ls
+  - stop container nya dulu
+      - docker network rm infrastructure
+
+buat infra
+  - docker network create infrastructure && cp .env.example .env && docker-compose up -d
+
+docker rm [CONTAINER_ID]
+docker images rm [IMAGE_ID]
+docker-compose up -d --build --force-recreate
+
+docker container ls
+docker logs <container id>
